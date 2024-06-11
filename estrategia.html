@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalles de Estrategia Maestra</title>
+    <!-- Enlace a la hoja de estilos de Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+    <!-- Enlace a los iconos de Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- Enlace a la hoja de estilos personalizada -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- NAVEGADOR -->
+    <!-- Barra de navegación expandida en pantallas grandes, estilo oscuro, y pegajosa en la parte superior -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-danger sticky-top">
+        <div class="container-fluid">
+            <!-- Marca de la barra de navegación, generalmente el logo -->
+            <a class="navbar-brand" href="index.html">
+                <img src="img/logo.jpg" alt="logo" width="200" height="80">
+            </a>
+            <!-- Botón para la vista móvil, colapsa y expande el menú -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Menú de navegación colapsable -->
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <!-- Enlaces de navegación -->
+                <div class="navbar-nav">
+                    <a class="nav-link" href="index.html">Inicio</a>
+                    <a class="nav-link" href="index.html#catalogo">Catálogo</a>
+                    <a class="nav-link" href="index.html#nosotros">Nosotros</a>
+                    <a class="nav-link" href="index.html#contactos">Contactos</a>
+                </div>
+                <!-- Enlaces de navegación alineados a la derecha -->
+                <div class="navbar-nav ms-auto">
+                    <a class="nav-link" href="#">
+                        <i class="bi bi-cart4"></i>
+                        <!-- Contador de carrito, estilo insignia -->
+                        <span id="cart-count" class="cart-count badge">0</span>
+                    </a>
+                    <a class="nav-link" href="#" id="login-button">
+                        <i class="bi bi-person-circle"> Iniciar sesión</i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- DETALLES DEL JUEGO -->
+    <section id="detalles-juego" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="text-center text-danger">Estrategia Maestra</h2>
+                    <p class="text-center">Estrategia Maestra es un juego de estrategia complejo y desafiante que pondrá a prueba tu ingenio y habilidades tácticas. Construye tu imperio y vence a tus enemigos en este emocionante juego de estrategia.</p>
+                    <div class="d-flex justify-content-center">
+                        <div>
+                            <img src="img/strategy-game.jpg" class="img-fluid" alt="Imagen del juego">
+                        </div>
+                    </div>
+                    <h3 class="text-center text-danger mt-4">Requisitos</h3>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item bg-dark text-white">Sistema operativo: Windows 10</li>
+                        <li class="list-group-item bg-dark text-white">Procesador: Intel Core i7</li>
+                        <li class="list-group-item bg-dark text-white">Memoria: 16 GB de RAM</li>
+                        <li class="list-group-item bg-dark text-white">Gráficos: NVIDIA GTX 1070</li>
+                        <li class="list-group-item bg-dark text-white">Almacenamiento: 60 GB disponibles</li>
+                    </ul>
+                    <h3 class="text-center text-danger mt-4">Instrucciones de Instalación y Compra</h3>
+                    <p class="text-center">Para instalar Estrategia Maestra, sigue estos pasos:</p>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item bg-dark text-white">Descarga el instalador desde nuestra página web.</li>
+                        <li class="list-group-item bg-dark text-white">Ejecuta el instalador y sigue las instrucciones en pantalla.</li>
+                        <li class="list-group-item bg-dark text-white">Ingresa la clave de activación que recibirás por correo electrónico después de la compra.</li>
+                        <li class="list-group-item bg-dark text-white">Disfruta del juego.</li>
+                    </ul>
+                    <h3 class="text-center text-danger mt-4">Formulario de Compra</h3>
+                    <form class="bg-light p-4 rounded shadow-sm">
+                        <div class="mb-3">
+                            <input class="form-control" placeholder="Nombre" type="text" required>
+                        </div>
+                        <div class="mb-3">
+                            <input class="form-control" placeholder="Email" type="email" required>
+                        </div>
+                        <div class="mb-3">
+                            <input class="form-control" placeholder="Número de tarjeta" type="text" required>
+                        </div>
+                        <div class="mb-3">
+                            <input class="form-control" placeholder="Fecha de expiración (MM/AA)" type="text" required>
+                        </div>
+                        <div class="mb-3">
+                            <input class="form-control" placeholder="Código CVV" type="text" required>
+                        </div>
+                        <button class="btn btn-primary btn-lg btn-block" type="submit">Comprar Ahora</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-dark text-white text-center py-3">
+        <div class="container">
+            <p class="mb-0">&copy; 2024 Videojuegos Online | Todos los derechos reservados | JOSUE RICARDO IRIARTE HUANCA RODRIGUEZ</p>
+        </div>
+    </footer>
+
+    <!-- Enlace a los scripts de Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+    <!-- Script para manejar el contenido dinámico -->
+    <script>
+        document.getElementById("login-button").addEventListener("click", function() {
+            alert("Iniciar sesión aún no está disponible.");
+        });
+
+        const addToCartButtons = document.querySelectorAll(".add-to-cart-button");
+        const cartCountElement = document.getElementById("cart-count");
+        let cartCount = 0;
+
+        addToCartButtons.forEach(button => {
+            button.addEventListener("click", function() {
+                cartCount++;
+                cartCountElement.textContent = cartCount;
+                alert("El producto ha sido agregado al carrito.");
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,57 @@
+body {
+    background: linear-gradient(to bottom right, #000000, #000033, #330033);
+    color: white;
+}
+.navbar {
+    background: linear-gradient(to bottom right, #000000, #000033, #330033);
+}
+.card {
+    background: rgba(0, 0, 0, 0.9);
+    color: white;
+}
+.card .bg-warning, .card .bg-info {
+    background: rgba(255, 255, 255, 0.1);
+}
+.bg-light, .form-control {
+    background: rgba(255, 255, 255, 0.1) !important;
+    color: white !important;
+}
+.carousel-caption {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 1rem;
+}
+footer {
+    background: linear-gradient(to bottom right, #000000, #000033, #330033);
+}
+.btn-primary {
+    background-color: #330033;
+    border-color: #330033;
+}
+.btn-primary:hover {
+    background-color: #000033;
+    border-color: #000033;
+}
+mb-3{
+    color: red;
+}
+
+/* Estilo para el contenedor del carrito */
+cart-items-container {
+    display: none;
+    position: absolute;
+    top: 50px;
+    right: 10px;
+    width: 300px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    z-index: 1000;
+}
+cart-items {
+    list-style: none;
+    padding: 0;
+}
+cart-items li {
+    padding: 5px 0;
+    border-bottom: 1px solid #ddd;
+}
